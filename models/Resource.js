@@ -9,7 +9,7 @@ const resourceSchema = new mongoose.Schema(
         },
         type: {
             type: String,
-            enum: ["NOTE", "PYQ", "SYLLABUS"],
+            enum: ["NOTE", "PYQ", "SYLLABUS", "VIDEO"],
             required: true,
         },
         semester: {
@@ -27,8 +27,12 @@ const resourceSchema = new mongoose.Schema(
             required: [true, "Subject code is required (e.g., BT-101)"],
         },
         fileUrl: {
-            type: String, // This will be the Cloudinary or Firebase Storage URL
-            required: [true, "Link to the uploaded PDF file is required"],
+            type: String, // This will be the Cloudinary or Firebase Storage URL for PDFs
+            default: "",
+        },
+        videoUrl: {
+            type: String, // YouTube URL or video file URL
+            default: "",
         },
         thumbnailUrl: {
             type: String, // Optional cover image
