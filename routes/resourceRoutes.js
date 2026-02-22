@@ -33,7 +33,11 @@ let mockResources = [
     // CIVIL & MECH & IT RANDOM
     { _id: "301", title: "Fluid Mechanics Notes", type: "NOTE", semester: 3, subjectName: "Fluid Mechanics", subjectCode: "CE-303", fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", views: 120, createdAt: new Date().toISOString() },
     { _id: "302", title: "Thermodynamics 2022 PYQ", type: "PYQ", semester: 3, subjectName: "Thermodynamics", subjectCode: "ME-303", fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", views: 95, createdAt: new Date().toISOString() },
-    { _id: "303", title: "Web Technologies Notes", type: "NOTE", semester: 4, subjectName: "Web Technologies", subjectCode: "IT-402", fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", views: 1050, createdAt: new Date().toISOString() }
+    { _id: "303", title: "Web Technologies Notes", type: "NOTE", semester: 4, subjectName: "Web Technologies", subjectCode: "IT-402", fileUrl: "https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf", views: 1050, createdAt: new Date().toISOString() },
+
+    // VIDEOS
+    { _id: "401", title: "Data Structures Complete Tutorial", type: "VIDEO", semester: 3, subjectName: "Data Structures", subjectCode: "CS-302", videoUrl: "https://www.youtube.com/embed/RBSUZEBXbx8", views: 450, createdAt: new Date().toISOString() },
+    { _id: "402", title: "Operating Systems Basics", type: "VIDEO", semester: 4, subjectName: "Operating Systems", subjectCode: "CS-402", videoUrl: "https://www.youtube.com/embed/vBURTt97EHs", views: 320, createdAt: new Date().toISOString() }
 ];
 
 router.get("/", (req, res) => {
